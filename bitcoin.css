@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body, html {
+  background-color: rgb(29, 29, 29);
+  font-family: "Press Start 2P", cursive;
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+}
+
+.left-container {
+    width: 25%;
+    display: grid;
+}
+
+.version {
+  color: white;
+  margin: 10px 0 0 10px;
+}
+
+#text {
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+  border: none;
+  font-size: 50px;
+  font-family: "Press Start 2P", cursive;
+}
+
+button {
+    font-family: "Press Start 2P", cursive;
+}
+
+.bitcoin-img {
+  width: 300px;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+#bitcoin-img-container {
+  display: grid;
+}
+
+.bitcoin-btn {
+  display: grid;
+  place-content: center;
+  height: 80%;
+  width: 50%;
+}
+
+.options {
+  display: grid;
+  place-content: center;
+}
+
+.upgrades {
+    width: 25%;
+    display: grid;
+    border-left: 10px solid rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
+}
+
+.upgrades button {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-content: center;
+    padding-left: 20px;
+}
+
+.upgradeTitle {
+    font-size: 20px;
+    text-align: left;
+}
+
+#upgradeCount {
+    font-size: 20px;
+}
+
+.rotate {
+    animation: spin 15s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.upgradeCost {
+  text-align: left;
+  color: #F39C12;
+}
+
+#perSecond {
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+  border: none;
+  font-size: 30px;
+  color: #757575;
+}
+
+.bitcoinPerSecond {
+  text-align: center;
+  color: #757575; 
+  margin-top: 10px;
+}
+
+#cpuCount {
+  font-size: 20px;
+}
+
+.note {
+  background-color: white;
+  width: 60%;
+  height: 30%;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+}

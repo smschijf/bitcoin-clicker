@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bitcoin miner</title>
+    <link rel="stylesheet" href="bitcoin.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="left-container">
+        <!-- <span class="version">Version 1.0.0 (pre-alpha)</span> -->
+        <div class="note">
+          note: <br>
+          de meeste upgrades werken (nog) niet <br><br>
+          om bitcoin toe te voegen: <br>
+          - klikken <br>
+          - scroll wheel <br>
+          - willekeurige toets
+        </div>
+      </div>
+      <div class="bitcoin-btn">
+        <input type="text" id="text" disabled placeholder="0" />
+        <div class="bitcoinPerSecond">
+        <span id="perSecond">0</span>
+        per second
+        </div>
+        <br />
+        <a href="#" onclick="add()" id="bitcoin-img-container"
+          ><img src="bitcoin.png" class="bitcoin-img rotate"
+        /></a>
+        <div class="options">
+          <button onclick="save()">Save</button>
+          <button onclick="load()">Load</button>
+          <button id="reset-button" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="upgrades">
+        <button onclick="buyOldCalculator()">
+          <div class="upgradeTitle">old calculator</div>
+          <div id="upgradeCount">0</div>
+          <div id="upgradeCost">10</div>
+        </button>
+        <button onclick="buyOldCpu()">
+          <div class="upgradeTitle">old CPU</div>
+          <div id="cpuCount">0</div>
+          <div id="cpuCost">25</div>
+        </button>
+        <button onclick="buyRaspberryPi()">
+          <div class="upgradeTitle">Raspberry pi</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyBusinessPc()">
+          <div class="upgradeTitle">your average business desktop</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyCheapServer()">
+          <div class="upgradeTitle">cheap server</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyHighPc()">
+          <div class="upgradeTitle">high-end gaming pc</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyMiningFarm()">
+          <div class="upgradeTitle">mining farm</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyNasaPc()">
+          <div class="upgradeTitle">NASA pc</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyQuantumRig()">
+          <div class="upgradeTitle">quantum mining rig</div>
+          <div id="upgradeCount">0</div>
+        </button>
+        <button onclick="buyBlackHole()">
+          <div class="upgradeTitle">black hole-powered miner</div>
+          <div id="upgradeCount">0</div>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="bitcoin.js"></script>
+</html>
