@@ -2,6 +2,7 @@
 TODO:
     - save en load functie moet meerdere dagen werken
     - alle upgrades moeten werken
+    - click multiplier toevoegen
 */
 
 // --- alle variabelen
